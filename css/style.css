@@ -180,7 +180,7 @@ ol {
 	font-family: "Quantico", sans-serif;
 	display: inline-block;
 	padding: 14px 30px 12px;
-	background: #009603;
+	background: #a48ecf;
 	border: none;
 }
 
@@ -627,7 +627,7 @@ ol {
 
 .cs-item .cs-text span {
 	font-size: 17px;
-	color: #009603;
+	color: #a48ecf;
 	display: block;
 	opacity: 0;
 	-webkit-transition: all 0.3s;
@@ -802,7 +802,7 @@ ol {
 }
 
 .load-more-btn.portfolio-btn a {
-	background: #a48ecf;																;
+	background: #a48ecf;																
 }
 
 .load-more-btn a {
@@ -999,7 +999,7 @@ ol {
 	width: 100px;
 	line-height: 100px;
 	text-align: center;
-	background: #009603;
+	background: #a48ecf;
 	font-size: 30px;
 	color: #ffffff;
 	display: inline-block;
@@ -1094,7 +1094,7 @@ ol {
 .team-item .ti-text span {
 	display: block;
 	font-size: 15px;
-	color: #009603;
+	color: #a48ecf;
 	margin-bottom: 20px;
 }
 
@@ -1232,7 +1232,7 @@ ol {
 	height: 36px;
 	line-height: 36px;
 	text-align: center;
-	background: #009603;
+	background: #a48ecf;
 	float: left;
 	margin-right: 20px;
 }
@@ -1297,7 +1297,7 @@ ol {
 }
 
 .pricing-item:hover:after {
-	background: #009603;
+	background: #a48ecf;
 }
 
 .pricing-item:hover .pi-price h2 {
@@ -1309,7 +1309,7 @@ ol {
 }
 
 .pricing-item:hover .pi-title {
-	background: #009603;
+	background: #a48ecf;
 }
 
 .pricing-item:hover .pi-title h3 {
@@ -1318,7 +1318,7 @@ ol {
 }
 
 .pricing-item:hover .pi-text .primary-btn {
-	background: #009603;
+	background: #a48ecf;
 	color: #ffffff;
 }
 
@@ -1330,7 +1330,7 @@ ol {
 }
 
 .pricing-item .pi-price h2 {
-	color: #009603;
+	color: #a48ecf;
 	font-weight: 700;
 	-webkit-transition: all 0.2s;
 	-o-transition: all 0.2s;
@@ -1424,7 +1424,7 @@ ol {
 .ph-text ul li {
 	list-style: none;
 	display: inline-block;
-	color: #009603;
+	color: #a48ecf;
 	font-size: 15px;
 	margin-right: 28px;
 	position: relative;
@@ -1540,7 +1540,7 @@ ol {
 .rp-item .rp-text span {
 	font-size: 15px;
 	font-weight: 600;
-	color: #009603;
+	color: #a48ecf;
 	display: block;
 }
 
@@ -1571,7 +1571,7 @@ ol {
 	color: #ffffff;
 	font-weight: 600;
 	display: inline-block;
-	background: #009603;
+	background: #a48ecf;
 	padding: 2px 12px;
 	text-transform: uppercase;
 }
@@ -2028,7 +2028,7 @@ ol {
 	color: #ffffff;
 	font-weight: 600;
 	display: inline-block;
-	background: #009603;
+	background: #a48ecf;
 	padding: 2px 12px;
 	text-transform: uppercase;
 }
@@ -2140,7 +2140,7 @@ ol {
 
 .blog-details-text .bd-comment-form .comment-item .ci-text ul li i {
 	font-size: 14px;
-	color: #009603;
+	color: #a48ecf;
 	margin-right: 5px;
 }
 
@@ -2329,7 +2329,7 @@ ol {
 .contact-text .ct-item .ct-icon {
 	height: 80px;
 	width: 80px;
-	background: #009603;
+	background: #a48ecf;
 	border-radius: 50%;
 	font-size: 40px;
 	line-height: 80px;
@@ -2580,12 +2580,12 @@ ol {
 	}
 	.slicknav_nav a:hover {
 		border-radius: 0;
-		background: #009603;
+		background: #a48ecf;
 		color: #fff;
 	}
 	.slicknav_nav .slicknav_row:hover {
 		border-radius: 0;
-		background: #009603;
+		background: #a48ecf;
 		color: #fff;
 	}
 	.slicknav_nav .slicknav_row,
@@ -2714,12 +2714,12 @@ ol {
 	}
 	.slicknav_nav a:hover {
 		border-radius: 0;
-		background: #009603;
+		background: #a48ecf;
 		color: #fff;
 	}
 	.slicknav_nav .slicknav_row:hover {
 		border-radius: 0;
-		background: #009603;
+		background: #a48ecf;
 		color: #fff;
 	}
 	.slicknav_nav .slicknav_row,
@@ -2833,12 +2833,12 @@ ol {
 	}
 	.slicknav_nav a:hover {
 		border-radius: 0;
-		background: #009603;
+		background: #a48ecf;
 		color: #fff;
 	}
 	.slicknav_nav .slicknav_row:hover {
 		border-radius: 0;
-		background: #009603;
+		background: #a48ecf;
 		color: #fff;
 	}
 	.slicknav_nav .slicknav_row,
