@@ -90,6 +90,9 @@ p {
 	text-align: justify;
 }
 
+.categories-section p{
+	text-align: justify;
+}
 img {
 	max-width: 100%;
 }
