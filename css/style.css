@@ -490,9 +490,9 @@ ol {
 }
 
 .hs-item .hs-text h2 {
-	font-size: 60px;
+	font-size: 70px;
 	color: #ffffff;
-	font-weight: 700;
+	font-weight: 800;
 	text-transform: uppercase;
 	margin-bottom: 20px;
 	position: relative;
@@ -802,7 +802,7 @@ ol {
 }
 
 .load-more-btn.portfolio-btn a {
-	background: #009603;
+	background: #a48ecf;																;
 }
 
 .load-more-btn a {
