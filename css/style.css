@@ -83,6 +83,10 @@ p {
 	font-weight: 400;
 	line-height: 26px;
 	margin: 0 0 15px 0;
+	text-align: center;
+}
+
+.services-item p{
 	text-align: justify;
 }
 
@@ -514,6 +518,7 @@ ol {
 	-o-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
 	opacity: 0;
+	text-align: center;
 }
 
 .hs-item .hs-text .primary-btn {
