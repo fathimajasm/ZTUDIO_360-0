@@ -509,6 +509,7 @@ ol {
 }
 
 .hs-item .hs-text p {
+	font-size: 17px;
 	color: #ffffff;
 	line-height: 30px;
 	margin-bottom: 32px;
