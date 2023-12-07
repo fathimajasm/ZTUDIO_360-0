@@ -83,6 +83,7 @@ p {
 	font-weight: 400;
 	line-height: 26px;
 	margin: 0 0 15px 0;
+	text-align: justify;
 }
 
 img {
@@ -1135,6 +1136,7 @@ ol {
 	line-height: 30px;
 	color: #ffffff;
 	margin-bottom: 30px;
+	text-align: center;
 }
 
 /*---------------------
