@@ -90,8 +90,12 @@ p {
 	text-align: justify;
 }
 
-.categories-section p{
-	text-align: justify;
+.footer-section p{
+	text-align: left;
+}
+
+.copyright-text p{
+	text-align: center;
 }
 img {
 	max-width: 100%;
@@ -823,7 +827,7 @@ ol {
 	letter-spacing: 2px;
 	display: inline-block;
 	padding: 15px 102px 13px;
-	background: #000606;
+	background: #a48ecf;
 	font-family: "Quantico", sans-serif;
 }
 
@@ -871,6 +875,7 @@ ol {
 	font-weight: 700;
 	text-transform: uppercase;
 	margin-bottom: 35px;
+	text-align: center;
 }
 
 .fs-widget .fw-instagram {
@@ -897,6 +902,7 @@ ol {
 	font-size: 15px;
 	color: #c4c4c4;
 	line-height: 36px;
+	text-align: center;
 }
 
 .fs-widget p {
