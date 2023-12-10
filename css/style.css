@@ -38,6 +38,7 @@ body {
 	font-family: "Open Sans", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
+	scroll-behavior: smooth;
 }
 
 h1,
@@ -119,6 +120,38 @@ ul,
 ol {
 	padding: 0;
 	margin: 0;
+}
+
+.intr {
+	position: absolute;
+	top: 0px;
+	z-index: 2;
+}
+
+.intr {
+	position: absolute;
+    width: 100%;
+    height: 760px !important;
+    top: 103px;
+    z-index: 2;
+	display: flex;
+	justify-content: center;
+}
+
+.intr .hs-text > h2 {
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 70px;
+	margin-bottom: 20px;
+}
+
+.intr .hs-text > p {
+	font-size: 17px;
+    color: #ffffff;
+    line-height: 30px;
+    margin-bottom: 32px;
+    position: relative;
 }
 
 /*---------------------
@@ -869,6 +902,10 @@ ol {
 	overflow: hidden;
 }
 
+.fs-widget > ul > li > a:hover {
+	color: #a48ecf;
+}
+
 .fs-widget h5 {
 	font-size: 20px;
 	color: #ffffff;
@@ -885,6 +922,8 @@ ol {
 
 .fs-widget .fw-instagram img {
 	width: calc(33.33% - 5px);
+	height: 100px;
+	object-fit: cover;
 	margin-right: 5px;
 	float: left;
 }

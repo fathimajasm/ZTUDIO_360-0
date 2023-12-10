@@ -81,7 +81,7 @@
     hero_s.owlCarousel({
         loop: true,
         margin: 0,
-        nav: true,
+        nav: false,
         items: 1,
         dots: false,
         animateOut: 'fadeOut',
