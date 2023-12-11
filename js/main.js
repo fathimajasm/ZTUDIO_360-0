@@ -27,17 +27,6 @@
         $(this).css('background-image', 'url(' + bg + ')');
     });
 
-    // Search model
-    $('.search-switch').on('click', function () {
-        $('.search-model').fadeIn(400);
-    });
-
-    $('.search-close-switch').on('click', function () {
-        $('.search-model').fadeOut(400, function () {
-            $('#search-input').val('');
-        });
-    });
-
     // Isotppe Filter
     $(".filter-controls li").on('click', function() {
         var filterData = $(this).attr("data-filter");
