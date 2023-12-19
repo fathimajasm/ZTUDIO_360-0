@@ -1332,6 +1332,10 @@ ol {
 	margin-bottom: 0;
 }
 
+.services-option p {
+	text-align: justify;
+}
+
 /*---------------------
   Pricing Section
 -----------------------*/
