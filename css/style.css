@@ -38,6 +38,7 @@ body {
 	font-family: "Open Sans", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
+	scroll-behavior: smooth;
 }
 
 h1,
@@ -121,6 +122,38 @@ ol {
 	margin: 0;
 }
 
+.intr {
+	position: absolute;
+	top: 0px;
+	z-index: 2;
+}
+
+.intr {
+	position: absolute;
+    width: 100%;
+    height: 760px !important;
+    top: 103px;
+    z-index: 2;
+	display: flex;
+	justify-content: center;
+}
+
+.intr .hs-text > h2 {
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 70px;
+	margin-bottom: 20px;
+}
+
+.intr .hs-text > p {
+	font-size: 17px;
+    color: #ffffff;
+    line-height: 30px;
+    margin-bottom: 32px;
+    position: relative;
+}
+
 /*---------------------
   Helper CSS
 -----------------------*/
@@ -148,7 +181,7 @@ ol {
 
 .spad {
 	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-bottom: 55px;
 }
 
 .spad-2 {
@@ -348,7 +381,7 @@ ol {
 }
 
 .nav-menu {
-	float: left;
+	float: right;
 }
 
 .nav-menu ul li {
@@ -437,12 +470,33 @@ ol {
 	width: 50px;
 	color: #ffffff;
 	background: #a48ecf;
-	border-radius: 20%;
+	border-radius: 10px;
 	line-height: 50px;
 	text-align: center;
 	cursor: pointer;
 	float: right;
-	margin: 19px 0 16px;
+	margin: 19px 0 16px 40px;
+	transition: all 0.3s ease-in-out;
+}
+
+.top-search .fa-book:before{
+	content:"\f02d";
+	transition: all 02s ease-in-out;
+}
+
+.top-search:hover {
+	width: 150px;
+}
+
+.top-search:active {
+	scale: 0.9;
+}
+
+.top-search:hover .fa-book:before{
+	font-family: "Quantico", sans-serif;
+	content:"BOOK NOW";
+	white-space: nowrap; /* Prevents the text from wrapping */
+  	clip: rect(0, auto, auto, 0);
 }
 
 .slicknav_menu {
@@ -869,6 +923,10 @@ ol {
 	overflow: hidden;
 }
 
+.fs-widget > ul > li > a:hover {
+	color: #a48ecf;
+}
+
 .fs-widget h5 {
 	font-size: 20px;
 	color: #ffffff;
@@ -885,6 +943,8 @@ ol {
 
 .fs-widget .fw-instagram img {
 	width: calc(33.33% - 5px);
+	height: 100px;
+	object-fit: cover;
 	margin-right: 5px;
 	float: left;
 }
@@ -1056,6 +1116,7 @@ ol {
 	line-height: 100px;
 	text-align: center;
 	background: #ffffff;
+	filter:hue-rotate(144deg);
 	float: left;
 	margin-right: 30px;
 }
@@ -1075,6 +1136,7 @@ ol {
 .about-text .at-list .al-item .al-text p {
 	color: #666666;
 	margin-bottom: 0;
+	text-align: justify;
 }
 
 /*---------------------
@@ -1130,6 +1192,7 @@ ol {
 -----------------------*/
 
 .cta-section {
+	margin-top: 120px;
 	padding-top: 140px;
 	padding-bottom: 150px;
 }
@@ -1180,6 +1243,7 @@ ol {
 	top: -12px;
 	background-image: url(../img/testimonial/quote.png);
 	background-repeat: no-repeat;
+	filter: hue-rotate(149deg);
 	content: "";
 	height: 26px;
 	width: 26px;
