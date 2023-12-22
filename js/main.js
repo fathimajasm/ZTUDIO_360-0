@@ -7,6 +7,13 @@
     Created: Colorlib
 ---------------------------------------------------------  */
 
+
+/*------------------
+    Subscription section
+--------------------*/
+
+
+
 'use strict';
 
 (function ($) {
@@ -128,3 +135,33 @@
     });
 
 })(jQuery);
+
+document.getElementById("emailform").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+    var params = {
+        name: document.getElementById("namecontact").value,
+        email: document.getElementById("emailcontact").value,
+        subject: document.getElementById("subjectcontact").value,
+        message: document.getElementById("messagecontact").value,
+    };
+
+    const serviceID = "service_eo98eac";
+    const templateID = "template_6kizhlk";
+
+    // Send the email using EmailJS
+    emailjs.send(serviceID, templateID, params)
+        .then((res) => {
+            console.log(res);
+            alert("Your message has been sent successfully");
+            document.getElementById("namecontact").value = "";
+            document.getElementById("emailcontact").value = "";
+            document.getElementById("subjectcontact").value = "";
+            document.getElementById("messagecontact").value = "";
+        })
+        .catch((err) => {
+            console.error(err);
+            alert("Error sending message. Please try again later.");
+        });
+
+
+});

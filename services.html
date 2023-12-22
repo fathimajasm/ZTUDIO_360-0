@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Phozogy Template">
-    <meta name="keywords" content="Phozogy, unica, creative, html">
+    <meta name="description" content="The Art Lens">
+    <meta name="keywords" content="Photographyraphy, unica, creative, html, camera, photographer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The Art Lens</title>
@@ -24,7 +24,7 @@
     <link rel="icon" href="Images/Favicon.png" type="image/x-icon">
 </head>
 
-<body>
+<body class="stopscroll">
     <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>
@@ -80,6 +80,13 @@
     <section class="services-section services-normal spad">
         <div class="container">
             <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-title">
+                        <h2>services</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="services-item">
                         <img src="img/Photos/PA260733.jpg" alt="">
@@ -98,7 +105,7 @@
                     <div class="services-item">
                         <img src="img/Photos/DSC06051.jpg" alt="">
                         <h3>Editing</h3>
-                        <p>Where creativity meets precision. Elevate your photos with expert editing, turning ordinary shots into extraordinary masterpieces. Unleash the power of pixels and transform your visuals into stories!</p>
+                        <p>Where creativity meets precision. Elevate your photos with expert editing, turning ordinary shots into extraordinary masterpieces. Unleash the power of pixels and transform your visuals into captivating stories!</p>
                     </div>
                 </div>
             </div>
@@ -110,50 +117,37 @@
     <section class="services-option">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-4">
                     <div class="so-item">
                         <div class="so-title">
                             <div class="so-number">01</div>
-                            <h5>Filming and Editing</h5>
+                            <h5>Events Photography </h5>
                         </div>
-                        <p>This involves capturing visual content of untold stories with a camera or lenses and refining it in post-production to create a cohesive and engaging final product.</p>
+                        <p style="text-align: justify;">
+                            Our services are available for events such as conventions, parties, concerts and festivals! We are also open to personal events such as baptisms, weddings and birthday events!
+                        </p>
                     </div>
+                </div>
+                <div class="col-lg-4">
                     <div class="so-item">
                         <div class="so-title">
                             <div class="so-number">02</div>
-                            <h5>Engagement Photography</h5>
+                            <h5>Products Photography</h5>
                         </div>
-                        <p>Focused on capturing the love and connection between couples, engagement photography creates timeless and romantic images often taken in meaningful locations.</p>
+                        <p style="text-align: justify;">
+                            We are open to providing photography services for commercial purposes for products such as food, beverages, brandings, clothing, accessories and artworks! 
+                        </p>
                     </div>
+                </div>
+                <div class="col-lg-4">
                     <div class="so-item">
                         <div class="so-title">
                             <div class="so-number">03</div>
-                            <h5>Commercial Photography</h5>
+                            <h5>Refined editing</h5>
                         </div>
-                        <p>Designed for business purposes, commercial photography creates visually compelling images to represent brands, products, or services for marketing and advertising.</p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="so-item">
-                        <div class="so-title">
-                            <div class="so-number">04</div>
-                            <h5>Social Media Photography</h5>
-                        </div>
-                        <p>Tailored for online platforms, social media photography aims to produce visually appealing and shareable content that aligns with an individual or brand's online presence.</p>
-                    </div>
-                    <div class="so-item">
-                        <div class="so-title">
-                            <div class="so-number">05</div>
-                            <h5>Event Photography</h5>
-                        </div>
-                        <p>Documenting various occasions, event photography captures candid moments and key highlights to provide a visual record of the atmosphere and emotions of the event.</p>
-                    </div>
-                    <div class="so-item">
-                        <div class="so-title">
-                            <div class="so-number">06</div>
-                            <h5>Personal Photography</h5>
-                        </div>
-                        <p>Covering a broad range of subjects, personal photography reflects individual preferences, capturing moments, memories, and the essence of a person's life through visual storytelling.</p>
+                        <p style="text-align: justify;">
+                            Our business provides editing services to enhance the quality of your photos and refining details and colors all while capturing the feeling to make your photos stand out!
+                        </p>
                     </div>
                 </div>
             </div>
@@ -162,104 +156,228 @@
     <!-- Services Option Section End -->
 
      <!-- Pricing Section Begin -->
-     <section class="pricing-section spad" id="pricesection">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="section-title pricing-title">
-                        <h2>Optimal Price</h2>
-                        <p></p>
+     <form id="FormClient">
+        <input type="text" name="packageselect" id="packageselect" hidden>
+        <section class="pricing-section spad" id="pricesection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="section-title pricing-title" style="margin-top: 90px;">
+                            <h2>Packages</h2>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 firstpackage">
+                        <div class="pricing-item">
+                            <div class="pi-price">
+                                <h2>$99</h2>
+                                <span>1 hour</span>
+                            </div>
+                            <div class="pi-title">
+                                <h3>Basic</h3>
+                            </div>
+                            <div class="pi-text">
+                                <ul>
+                                    <li>up to 30 photos</li>
+                                    <li>no retouched photos</li>
+                                    <li>no lighting equipment</li>
+                                    <li>  &nbsp</li>
+                                </ul>
+                                <a href="#calendarsection" class="primary-btn" onclick="Booking1(); setActivePackage(1);">Set Booking</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 secondpackage">
+                        <div class="pricing-item">
+                            <div class="pi-price">
+                                <h2>$199</h2>
+                                <span>2 hour</span>
+                            </div>
+                            <div class="pi-title">
+                                <h3>Standard</h3>
+                            </div>
+                            <div class="pi-text">
+                                <ul>
+                                    <li>up to 65 photos</li>
+                                    <li>simple retouched photos</li>
+                                    <li>no lighting equipment</li>
+                                    <li>no raw picture files</li>
+                                </ul>
+                                <a href="#calendarsection" class="primary-btn" onclick="Booking2(); setActivePackage(2); modalPayment()">Set Booking</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 thirdpackage">
+                        <div class="pricing-item">
+                            <div class="pi-price">
+                                <h2>$399</h2>
+                                <span>3 hour</span>
+                            </div>
+                            <div class="pi-title">
+                                <h3>Extended</h3>
+                            </div>
+                            <div class="pi-text">
+                                <ul>
+                                    <li>up to 80 photos</li>
+                                    <li>fully retouched photos</li>
+                                    <li>no lighting equipment</li>
+                                    <li>raw picture files included</li>
+                                </ul>
+                                <a href="#calendarsection" class="primary-btn" onclick="Booking3(); setActivePackage(3); modalPayment()">Set Booking</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 fourthpackage">
+                        <div class="pricing-item">
+                            <div class="pi-price">
+                                <h2>$599</h2>
+                                <span>5 hour</span>
+                            </div>
+                            <div class="pi-title">
+                                <h3>Ultimate</h3>
+                            </div>
+                            <div class="pi-text">
+                                <ul>
+                                    <li>up to 90 photos</li>
+                                    <li>fully retouched photos</li>
+                                    <li>lighting equipment included</li>
+                                    <li>raw picture files included</li>
+                                </ul>
+                                <a href="#calendarsection" class="primary-btn" onclick="Booking4(); setActivePackage(4); modalPayment(); ">Set Booking</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="pricing-item">
-                        <div class="pi-price">
-                            <h2>$99</h2>
-                            <span>1 hour</span>
-                        </div>
-                        <div class="pi-title">
-                            <h3>Basic</h3>
-                        </div>
-                        <div class="pi-text">
-                            <ul>
-                                <li>Up to 30 photos</li>
-                                <li>No retouched photos</li>
-                                <li>No make-up</li>
-                                <li>No stylist assistance</li>
-                            </ul>
-                            <a href="contact.html" class="primary-btn">Get appointment</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="pricing-item">
-                        <div class="pi-price">
-                            <h2>$199</h2>
-                            <span>2 hour</span>
-                        </div>
-                        <div class="pi-title">
-                            <h3>Standard</h3>
-                        </div>
-                        <div class="pi-text">
-                            <ul>
-                                <li>Up to 60 photos</li>
-                                <li>Retouched photos</li>
-                                <li>No make-up</li>
-                                <li>No stylist assistance</li>
-                            </ul>
-                            <a href="contact.html" class="primary-btn">Get appointment</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="pricing-item">
-                        <div class="pi-price">
-                            <h2>$299</h2>
-                            <span>3 hour</span>
-                        </div>
-                        <div class="pi-title">
-                            <h3>Extended</h3>
-                        </div>
-                        <div class="pi-text">
-                            <ul>
-                                <li>Up to 90 photos</li>
-                                <li>Retouched photos</li>
-                                <li>With make-up</li>
-                                <li>With stylist assistance</li>
-                            </ul>
-                            <a href="contact.html" class="primary-btn">Get appointment</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="pricing-item">
-                        <div class="pi-price">
-                            <h2>$399</h2>
-                            <span>5 hour</span>
-                        </div>
-                        <div class="pi-title">
-                            <h3>Ultimate</h3>
-                        </div>
-                        <div class="pi-text">
-                            <ul>
-                                <li>Up to 120 photos</li>
-                                <li>Retouched photos</li>
-                                <li>With make-up</li>
-                                <li>With stylist assistance</li>
-                            </ul>
-                            <a href="contact.html" class="primary-btn">Get appointment</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Pricing Section End -->
+        </section>
+        <!-- Pricing Section End -->
 
+        <!-- Services Option Section Begin -->
+        <section class="services-option" id="calendarsection">
+            <div class="container">
+                <div class="row" style="display: block">
+                    <div class="app-container" ng-app="dateTimeApp" ng-controller="dateTimeCtrl as ctrl" ng-cloak style="height: 450px;">
+            
+                        <div date-picker
+                            datepicker-title="Select Date"
+                            picktime="true"
+                            pickdate="true"
+                            pickpast="false"
+                            mondayfirst="false"
+                            custom-message="You have selected"
+                            selecteddate="ctrl.selected_date"
+                            updatefn="ctrl.updateDate(newdate)">
+                        
+                            <div class="datepicker"
+                                ng-class="{
+                                    'am': timeframe == 'am',
+                                    'pm': timeframe == 'pm',
+                                    'compact': compact
+                                }" style="height: 29em;">
+                                <div class="datepicker-header">
+                                    <div class="datepicker-title" ng-if="datepicker_title">{{ datepickerTitle }}</div>
+                                    <div class="datepicker-subheader">{{ customMessage }} {{ selectedDay }} {{ monthNames[localdate.getMonth()] }} {{ localdate.getDate() }}, {{ localdate.getFullYear() }} at {{ edittime.formatted }}</div>
+                                    <input type="text" class="" name="DateSelect" id="DateSelect" ng-model="monthNames[localdate.getMonth()] + ' ' + localdate.getDate() + ' ' + localdate.getFullYear()" hidden/>
+                                </div>
+                                <div class="datepicker-calendar">
+                                    <div class="calendar-header">
+                                        <div class="goback" ng-click="moveBack()" ng-if="pickdate">
+                                            <svg width="30" height="30">
+                                                <path fill="none" stroke="#8267B8" stroke-width="3" d="M19,6 l-9,9 l9,9"/>
+                                            </svg>
+                                        </div>
+                                        <div class="current-month-container">{{ currentViewDate.getFullYear() }} {{ currentMonthName() }}</div>
+                                        <div class="goforward" ng-click="moveForward()" ng-if="pickdate">
+                                            <svg width="30" height="30">
+                                                <path fill="none" stroke="#8267B8" stroke-width="3" d="M11,6 l9,9 l-9,9" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="calendar-day-header">
+                                        <span ng-repeat="day in days" class="day-label">{{ day.short }}</span>
+                                    </div>
+                                    <div class="calendar-grid" ng-class="{false: 'no-hover'}[pickdate]">
+                                        <div
+                                            ng-class="{'no-hover': !day.showday}"
+                                            ng-repeat="day in month"
+                                            class="datecontainer"
+                                            ng-style="{'margin-left': calcOffset(day, $index)}"
+                                            track by $index>
+                                            <div class="datenumber" ng-class="{'day-selected': day.selected }" ng-click="selectDate(day)">
+                                                {{ day.daydate }}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="timepicker" ng-if="picktime == 'true'">
+                                    <div ng-class="{'am': timeframe == 'am', 'pm': timeframe == 'pm' }">
+                                        <div class="timepicker-container-outer" selectedtime="time" timetravel>
+                                            <div class="timepicker-container-inner">
+                                                <div class="timeline-container" ng-mousedown="timeSelectStart($event)" sm-touchstart="timeSelectStart($event)">
+                                                    <div class="current-time">
+                                                        <div class="actual-time">{{ time }}</div>
+                                                    </div>
+                                                    <div class="timeline">
+                                                    </div>
+                                                    <div class="hours-container">
+                                                        <div class="hour-mark" ng-repeat="hour in getHours() track by $index"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="display-time">
+                                                    <div class="decrement-time" ng-click="adjustTime('decrease')">
+                                                        <svg width="24" height="24">
+                                                            <path stroke="white" stroke-width="2" d="M8,12 h8"/>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="time" ng-class="{'time-active': edittime.active}">
+                                                        <input type="text" class="time-input" name="TimeSelect" id="TimeSelect" ng-model="edittime.input" ng-keydown="changeInputTime($event)" ng-focus="edittime.active = true; edittime.digits = [];" ng-blur="edittime.active = false"/>
+                                                        <div class="formatted-time">{{ edittime.formatted }}</div>
+                                                    </div>
+                                                    <div class="increment-time" ng-click="adjustTime('increase')">
+                                                        <svg width="24" height="24">
+                                                            <path stroke="white" stroke-width="2" d="M12,7 v10 M7,12 h10"/>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="am-pm-container">
+                                                    <div class="am-pm-button" ng-click="changetime('am');">am</div>
+                                                    <div class="am-pm-button" ng-click="changetime('pm');">pm</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="timepicker" ng-if="picktime == 'true'">
+                                    <div ng-class="{'am': timeframe == 'am', 'pm': timeframe == 'pm' }">
+                                        <div class="timepicker-container-outer" selectedtime="time" timetravel>
+                                            <div class="timepicker-container-inner">
+                                                <label for="CustomerEmail" style="display: block; margin-top: -33px; font-weight: 550;">Email</label>
+                                                <input type="email" id="CustomerEmail" name="CustomerEmail" required>
+                                                <label for="CustomerName" style="display: block; margin-top: 40px; font-weight: 550;">Client Name</label>
+                                                <input type="text" id="CustomerName" name="CustomerName" required>
+                                                <label for="CustomerPhone" style="display: block; margin-top: 40px; font-weight: 550;">Phone Number <class style="font-size: 10px;">(Optional)</style></label>
+                                                <input type="text" id="CustomerPhone" name="CustomerPhone" onkeyup="this.value = this.value.replace(/[^0-9-]/g, '');" init="N/A">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buttons-container">
+                                    <div class="cancel-button" onclick="closecalendar(); ; ClientForm();">CANCEL</div>
+                                    <input class="save-button" type="submit" id="submit" value="SUBMIT">
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>                                         
+            </div>
+        </section>
+        <!-- Services Option Section End -->
+    </form>
     <!-- Services Option Section Begin -->
-    <section class="services-option">
+    <section class="services-option" style="margin-top: 90px;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -273,46 +391,58 @@
                     <div class="so-item">
                         <div class="so-title">
                             <div class="so-number">01</div>
-                            <h5>Filming and Editing</h5>
+                            <h5>What is your usual turnaround time?</h5>
                         </div>
-                        <p>What are the key considerations for achieving professional-quality footage during filming?</p>
+                        <p style="text-align: justify;">
+                            Tunraround time varies depending on the package you choose to ensure quality. For the Basic package, it may take around 1-2 days. Packages including retouches, it may take around 6-13 days.
+                        </p>
                     </div>
                     <div class="so-item">
                         <div class="so-title">
                             <div class="so-number">02</div>
-                            <h5>Engagement photography</h5>
+                            <h5>Can we request specific shots or provide a shot list?</h5>
                         </div>
-                        <p>How can we ensure our engagement photos capture the unique personality and connection of the couple?</p>
+                        <p style="text-align: justify;">
+                            Of course! your input and details for your request are welcome, I will do my best to incorporate those ideas into the shoot. This may be accepted depending what the chosen packatge provides.
+                        </p>
                     </div>
                     <div class="so-item">
                         <div class="so-title">
                             <div class="so-number">03</div>
-                            <h5>Comercial photography</h5>
+                            <h5>How far in advance do we need to book your services?</h5>
                         </div>
-                        <p>What steps should be taken to align commercial photography with a brand's visual identity and marketing goals?</p>
+                        <p style="text-align: justify;">
+                            Booking in advanced is strongly recommended. This gives both you - the client - and me - the photographer - time to prepare and plan for the shoot. This also allows me to prepare the equipment needed.
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="so-item">
                         <div class="so-title">
                             <div class="so-number">04</div>
-                            <h5>Social media photography</h5>
+                            <h5>Payment duration to secure my booking</h5>
                         </div>
-                        <p>What elements contribute to creating visually appealing and shareable content for social media platforms?</p>
+                        <p style="text-align: justify;">
+                            Payment is required within 48 hours of confirming our agreement. This ensures your date is reserved, allowing me to properly prepare for your event. You can conveniently make the payment through Gcash by contacting me after confirming a package</p>
                     </div>
                     <div class="so-item">
                         <div class="so-title">
                             <div class="so-number">05</div>
-                            <h5>Event Photography</h5>
+                            <h5>What is your cancellation and refund policy?</h5>
                         </div>
-                        <p>How do event photographers ensure they capture the essence and key moments of an event without being intrusive?</p>
+                        <p style="text-align: justify;">
+                            I have a flexible cancellation policy. If there's a need to reschedule or cancel, please notify me as soon as possible. I'll do my best to accommodate changes. As for refunds, they are considered on a case-by-case basis."
+
+                        </p>
                     </div>
                     <div class="so-item">
                         <div class="so-title">
                             <div class="so-number">06</div>
-                            <h5>personal photography</h5>
+                            <h5>Are there any limitations on the usage of the photos?</h5>
                         </div>
-                        <p>What tips can enhance the quality of personal photos, whether it's for travel, family, or individual portraits?</p>
+                        <p style="text-align: justify;">
+                            While I retain the copyright to the images, I provide clients with a license for personal use, which includes printing, sharing on social media, and other non-commercial purposes. If you have specific usage concerns, we can discuss them to ensure your needs are met.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -334,7 +464,7 @@
                         <p style="text-align: justify;">Capture moments and bring pictures to life. Experience the joy of having each photo turned into lasting memories.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-6" style="margin-left: 40px;">
                     <div class="fs-widget">
                         <h5>FACEBOOK</h5>
                         <div class="fw-instagram">
@@ -358,13 +488,13 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-5" style="max-width: 22%;">
                     <div class="fs-widget">
                         <h5>Contact Me</h5>
                         <div class="fw-subscribe">
-                            <form action="#">
-                                <input type="text" placeholder="Email">
-                                <button type="submit"><i class="fa fa-send"></i></button>
+                            <form action="contact.html#contact-section" method="POST">
+                                <input type="text" placeholder="Email" id="emailInput">
+                                <button type="submit" onclick="saveEmail()"><i class="fa fa-send"></i></button>
                             </form>
                         </div>
                     </div>
@@ -381,14 +511,14 @@
     </footer>
     <!-- Footer Section End -->
 
-
     <!-- Search model Begin -->
     <div class="search-model">
         <div class="h-100 d-flex align-items-center justify-content-center">
-            <div class="search-close-switch">+</div>
-            <form class="search-model-form">
-                <input type="text" id="search-input" placeholder="Search here.....">
-            </form>
+            <div class="modal">
+                <div class="search-close-switch" onclick="closemodal()">+</div>
+                <img src="img/clients/GcashPlaceholder.png" alt="PaymentQR" id="PaymentQR">
+                YOU CAN NOW PAY THROUGH GCASH BY JUST SCANNING THE QR-CODE!
+            </div>
         </div>
     </div>
     <!-- Search model end -->
@@ -401,7 +531,721 @@
     <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/angular.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script>
+        function saveEmail() {
+            const emailValue = document.getElementById('emailInput').value;
+            localStorage.setItem('userEmail', emailValue);
+            window.location.href = 'contact.html';
+        }
+    </script>
+    <script>
+        var packageselect = document.getElementById("packageselect");
+            
+        function Booking1() {
+			packageselect.value = "Basic";
+            document.getElementById("calendarsection").style.height = "458px";
+        }
+
+        function Booking2() {
+            packageselect.value = "Standard";
+            document.getElementById("calendarsection").style.height = "458px";
+        }
+
+        function Booking3() {
+            packageselect.value = "Extended";
+            document.getElementById("calendarsection").style.height = "458px";
+        }
+
+        function Booking4() {
+            packageselect.value = "Ultra";
+            document.getElementById("calendarsection").style.height = "458px";
+        }
+
+        function closecalendar() {
+            document.getElementById("calendarsection").style.height = "0px";
+        }
+        function setActivePackage(packageNumber) {
+    // Check if the element with the specified selector exists
+    const clickedItem = document.querySelector('.col-lg-3:nth-child(' + packageNumber + ') .pricing-item');
+    if (!clickedItem) {
+        console.error('Element not found:', '.col-lg-3:nth-child(' + packageNumber + ') .pricing-item');
+        return;
+    }
+
+    // Remove active class from all pricing items
+    const pricingItems = document.querySelectorAll('.pricing-item');
+    pricingItems.forEach(item => {
+        item.classList.remove('active');
+    });
+
+    // Add active class to the clicked pricing item
+    clickedItem.classList.add('active');
+}
+
+        function closemodal() {
+            document.getElementsByClassName("search-model")[0].style.opacity = "0";
+            document.getElementsByClassName("search-model")[0].style.pointerEvents = "none";
+            document.getElementById("PaymentQR").style.scale = "45%";
+            document.getElementsByClassName("stopscroll")[0].style.overflowY = "scroll";
+        }
+
+        function ClientForm() {
+    const pricingItems = document.querySelectorAll('.pricing-item');
+    pricingItems.forEach(item => {
+        item.classList.remove('active');
+    });
+
+    // Add active class to the clicked pricing item
+    clickedItem.classList.add('active');
+        }
+
+    </script>
+    <script>
+        
+        var app = angular.module('dateTimeApp', []);
+        
+        app.controller('dateTimeCtrl', function ($scope) {
+            var ctrl = this;
+            
+            ctrl.selected_date = new Date();
+            ctrl.selected_date.setHours(10);
+            ctrl.selected_date.setMinutes(0);
+            
+            ctrl.updateDate = function (newdate) {
+                
+                // Do something with the returned date here.
+                
+                console.log(newdate);
+            };
+        });
+        
+        // Date Picker
+        app.directive('datePicker', function ($timeout, $window) {
+            return {
+                restrict: 'AE',
+                scope: {
+                    selecteddate: "=",
+                    updatefn: "&",
+                    open: "=",
+                    datepickerTitle: "@",
+                    customMessage: "@",
+                    picktime: "@",
+                    pickdate: "@",
+                    pickpast: '=',
+                    mondayfirst: '@',
+                    disabledDays: '=' // Added disabledDays binding
+                },
+                transclude: true,
+                link: function (scope, element, attrs, ctrl, transclude) {
+                    transclude(scope, function(clone, scope) {
+                        element.append(clone);
+                    });
+                    
+                    if (!scope.selecteddate) {
+                        scope.selecteddate = new Date();
+                    }
+        
+                    if (attrs.datepickerTitle) {
+                        scope.datepicker_title = attrs.datepickerTitle;
+                    }
+        
+                    scope.days = [
+                        { "long":"Sunday","short":"Sun" },
+                        { "long":"Monday","short":"Mon" },
+                        { "long":"Tuesday","short":"Tue" },
+                        { "long":"Wednesday","short":"Wed" },
+                        { "long":"Thursday","short":"Thu" },
+                        { "long":"Friday","short":"Fri" },
+                        { "long":"Saturday","short":"Sat" },
+                    ];
+                    if (scope.mondayfirst == 'true') {
+                        var sunday = scope.days[0];
+                        scope.days.shift();
+                        scope.days.push(sunday);
+                    }
+        
+                    scope.monthNames = [
+                        "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
+                    ];
+        
+                    function getSelected() {
+                        if (scope.currentViewDate.getMonth() == scope.localdate.getMonth()) {
+                            if (scope.currentViewDate.getFullYear() == scope.localdate.getFullYear()) {
+                                for (var number in scope.month) {
+                                    if (scope.month[number].daydate == scope.localdate.getDate()) {
+                                        scope.month[number].selected = true;
+                                        if (scope.mondayfirst == 'true') {
+                                            if (parseInt(number) === 0) {
+                                                number = 6;
+                                            } else {
+                                                number = number - 1;
+                                            }
+                                        }
+                                        scope.selectedDay = scope.days[scope.month[number].dayname].long;
+                                    }
+                                }
+                            }
+                        }
+                    }
+        
+                    function getDaysInMonth(disabledDays) {
+                        var month = scope.currentViewDate.getMonth();
+                        var date = new Date(scope.currentViewDate.getFullYear(), month, 1);
+                        var days = [];
+                        var today = new Date();
+
+                        while (date.getMonth() === month) {
+                            var showday = true;
+                            var disabledDates = [
+                                { month: 0, days: [1, 2] }, //January Holidays
+                                { month: 1, days: [24] }, //February Holidays
+                                { month: 3, days: [6, 7, 8, 10, 21] }, //April Holidays
+                                { month: 4, days: [1] }, //May Holidays
+                                { month: 5, days: [12, 28] }, //June Holidays
+                                { month: 7, days: [28, 21] }, //August Holidays
+                                { month: 9, days: [30] }, //October Holidays
+                                { month: 10, days: [2, 27] }, //November Holidays
+                                { month: 11, days: [25, 26, 30, 31] } //December Holidays
+                            ];
+
+                            // Iterate over the array to check if the current date should be disabled
+                            for (var i = 0; i < disabledDates.length; i++) {
+                                    var disabledMonth = disabledDates[i].month;
+                                    var disabledDays = disabledDates[i].days;
+
+                                if (month === disabledMonth && disabledDays.indexOf(date.getDate()) !== -1) {
+                                    showday = false;
+                                    isDisabled = true; // You can set isDisabled to true if needed
+                                    break; // Exit the loop once a match is found
+                                } else {
+                                    showday = true;
+                                    isDisabled = false;
+                                }
+                            }
+                            if (!scope.pickpast && date < today) {
+                                showday = false;
+                            }
+                            if (today.getDate() == date.getDate() &&
+                                today.getYear() == date.getYear() &&
+                                today.getMonth() == date.getMonth()) {
+                                showday = true;
+                            }
+
+                            // Check if the day should be disabled
+                            var day = new Date(date);
+                            var dayname = day.getDay();
+                            var daydate = day.getDate();
+
+                            days.push({ 'dayname': dayname, 'daydate': daydate, 'showday': showday, 'disabled': isDisabled });
+                            date.setDate(date.getDate() + 1);
+                        }
+
+                        scope.month = days;
+                    }
+
+
+        
+                    function initializeDate(localdate) {
+                        scope.currentViewDate = new Date(localdate || scope.localdate);
+                        scope.currentMonthName = function () {
+                            return scope.monthNames[scope.currentViewDate.getMonth()];
+                        };
+                        getDaysInMonth([]);
+                        getSelected();
+                    }
+
+            
+            
+        
+                    // Takes selected time and date and combines them into a date object
+                    function getDateAndTime(localdate) {
+                        var time = scope.time.split(':');
+                        if (scope.timeframe == 'am' && time[0] == '12') {
+                            time[0] = 0;
+                        } else if (scope.timeframe == 'pm' && time[0] !== '12') {
+                            time[0] = parseInt(time[0]) + 12;
+                        }
+                        return new Date(localdate.getFullYear(), localdate.getMonth(), localdate.getDate(), time[0], time[1]);                
+                    }
+        
+                    // Convert to UTC to account for different time zones
+                    function convertToUTC(localdate) {
+                        var date_obj = getDateAndTime(localdate);
+                        var utcdate = new Date(date_obj.getUTCFullYear(), date_obj.getUTCMonth(), date_obj.getUTCDate(), date_obj.getUTCHours(), date_obj.getUTCMinutes());
+                        return utcdate;
+                    }
+                    // Convert from UTC to account for different time zones
+                    function convertFromUTC(utcdate) {
+                        localdate = new Date(utcdate);
+                        return localdate;
+                    }
+        
+                    // Returns the format of time desired for the scheduler, Also I set the am/pm
+                    function formatAMPM(date) {
+                        var hours = date.getHours();
+                        var minutes = date.getMinutes();
+                        hours >= 12 ? scope.changetime('pm') : scope.changetime('am');
+                        hours = hours % 12;
+                        hours = hours ? hours : 12; // the hour '0' should be '12'
+                        minutes = minutes < 10 ? '0' + minutes : minutes;
+                        var strTime = hours + ':' + minutes;
+                        return strTime;
+                    }
+                    
+                    scope.$watch('open', function() {
+                        if (scope.selecteddate !== undefined && scope.selecteddate !== null) {
+                            scope.localdate = convertFromUTC(scope.selecteddate);
+                        } else {
+                            scope.localdate = new Date();
+                            scope.localdate.setMinutes(Math.round(scope.localdate.getMinutes() / 60) * 30);
+                        }
+                        scope.time = formatAMPM(scope.localdate);
+                        scope.setTimeBar(scope.localdate);
+                        initializeDate(scope.localdate);
+                        scope.updateInputTime();
+                    });
+        
+                    scope.selectDate = function (day) {
+        
+                        if (scope.pickdate == "true" && day.showday && !day.disabled) {
+                            for (var number in scope.month) {
+                                var item = scope.month[number];
+                                if (item.selected === true) {
+                                    item.selected = false;
+                                }
+                            }
+                            day.selected = true;
+                            scope.selectedDay = scope.days[day.dayname].long;
+                            scope.localdate = new Date(scope.currentViewDate.getFullYear(), scope.currentViewDate.getMonth(), day.daydate);
+                            initializeDate(scope.localdate);
+                            scope.updateDate();
+                        }
+                    };
+        
+                    scope.updateDate = function () {
+                        if (scope.localdate) {
+                            var newdate = getDateAndTime(scope.localdate);
+                            scope.updatefn({newdate:newdate});
+                        }
+                    };
+        
+                    scope.moveForward = function () {
+                        scope.currentViewDate.setMonth(scope.currentViewDate.getMonth() + 1);
+                        if (scope.currentViewDate.getMonth() == 12) {
+                            scope.currentViewDate.setDate(scope.currentViewDate.getFullYear() + 1, 0, 1);
+                        }
+                        getDaysInMonth();
+                        getSelected();
+                    };
+        
+                    scope.moveBack = function () {
+                        scope.currentViewDate.setMonth(scope.currentViewDate.getMonth() - 1);
+                        if (scope.currentViewDate.getMonth() == -1) {
+                            scope.currentViewDate.setDate(scope.currentViewDate.getFullYear() - 1, 0, 1);
+                        }
+                        getDaysInMonth();
+                        getSelected();
+                    };
+        
+                    scope.calcOffset = function (day, index) {
+                        if (index === 0) {
+                            var offset = (day.dayname * 14.2857142) + '%';
+                            if (scope.mondayfirst == 'true') {
+                                offset = ((day.dayname - 1) * 14.2857142) + '%';
+                            }
+                            return offset;
+                        }
+                    };
+                    
+                    ///////////////////////////////////////////////
+                    // Check size of parent element, apply class //
+                    ///////////////////////////////////////////////
+                    scope.checkWidth = function (apply) {
+                        var parent_width = element.parent().width();
+                        if (parent_width < 620) {
+                            scope.compact = true;
+                        } else {
+                            scope.compact = false;
+                        }
+                        if (apply) {
+                            scope.$apply();
+                        }
+                    };
+                    scope.checkWidth(false);
+                    
+                    //////////////////////
+                    // Time Picker Code //
+                    //////////////////////
+                    if (scope.picktime) {
+                        var currenttime;
+                        var timeline;
+                        var timeline_width;
+                        var timeline_container;
+                        var sectionlength;
+        
+                        scope.getHours = function () {
+                            var hours = new Array(11);
+                            return hours;
+                        };
+        
+                        scope.time = "12:00";
+                        scope.hour = 12;
+                        scope.minutes = 0;
+                        scope.currentoffset = 0;
+        
+                        scope.timeframe = 'am';
+        
+                        scope.changetime = function(time) {
+                            scope.timeframe = time;
+                            scope.updateDate();
+                            scope.updateInputTime();					
+                        };
+                        
+                        scope.edittime = {
+                            digits: []
+                        };
+                        
+                        scope.updateInputTime = function () {
+                            scope.edittime.input = scope.time + ' ' + scope.timeframe;
+                            scope.edittime.formatted = scope.edittime.input;
+                        };
+                        
+                        scope.updateInputTime();
+                        
+                        function checkValidTime (number) {
+                            validity = true;
+                            switch (scope.edittime.digits.length) {
+                                case 0:
+                                    if (number === 0) {
+                                        validity = false;
+                                    }
+                                    break;
+                                case 1:
+                                    if (number > 5) {
+                                        validity = false;
+                                    } else {
+                                        validity = true;
+                                    }
+                                    break;
+                                case 2:
+                                    validity = true;
+                                    break;
+                                case 3:
+                                    if (scope.edittime.digits[0] > 1) {
+                                        validity = false;
+                                    } else if (scope.edittime.digits[1] > 2) {
+                                        validity = false;
+                                    } else if (scope.edittime.digits[2] > 5) {
+                                        validity = false;
+                                    }
+                                    else {
+                                        validity = true;								
+                                    }
+                                    break;
+                                case 4:
+                                    validity = false;
+                                    break;
+                            }
+                            return validity;
+                        }
+                        
+                        function formatTime () {
+                            var time = "";
+                            if (scope.edittime.digits.length == 1) {
+                                time = "--:-" + scope.edittime.digits[0];
+                            } else if (scope.edittime.digits.length == 2) {
+                                time = "--:" + scope.edittime.digits[0] + scope.edittime.digits[1];
+                            } else if (scope.edittime.digits.length == 3) {
+                                time = "-" + scope.edittime.digits[0] + ':' + scope.edittime.digits[1] + scope.edittime.digits[2];
+                            } else if (scope.edittime.digits.length == 4) {
+                                time = scope.edittime.digits[0] + scope.edittime.digits[1].toString() + ':' + scope.edittime.digits[2] + scope.edittime.digits[3];
+                                console.log(time);
+                            }
+                            return time + ' ' + scope.timeframe;
+                        };
+                        
+                        scope.changeInputTime = function (event) {
+                            var numbers = {48:0,49:1,50:2,51:3,52:4,53:5,54:6,55:7,56:8,57:9};
+                            if (numbers[event.which] !== undefined) {
+                                if (checkValidTime(numbers[event.which])) {
+                                    scope.edittime.digits.push(numbers[event.which]);
+                                    console.log(scope.edittime.digits);
+                                    scope.time_input = formatTime();
+                                    scope.time = numbers[event.which] + ':00';
+                                    scope.updateDate();
+                                    scope.setTimeBar();
+                                }
+                            } else if (event.which == 65) {
+                                scope.timeframe = 'am';
+                                scope.time_input = scope.time + ' ' + scope.timeframe;
+                            } else if (event.which == 80) {
+                                scope.timeframe = 'pm';
+                                scope.time_input = scope.time + ' ' + scope.timeframe;
+                            } else if (event.which == 8) {
+                                scope.edittime.digits.pop();
+                                scope.time_input = formatTime();
+                                console.log(scope.edittime.digits);
+                            }
+                            scope.edittime.formatted = scope.time_input;
+                            // scope.edittime.input = formatted;
+                        };
+                        
+                        var pad2 = function (number) {
+                            return (number < 10 ? '0' : '') + number;
+                        };
+                   
+                        scope.moving = false;
+                        scope.offsetx = 0;
+                        scope.totaloffset = 0;
+                        scope.initializeTimepicker = function () {
+                            currenttime = $('.current-time');
+                            timeline = $('.timeline');
+                            if (timeline.length > 0) {
+                                timeline_width = timeline[0].offsetWidth;
+                            }
+                            timeline_container = $('.timeline-container');
+                            sectionlength = timeline_width / 24 / 6;
+                        };
+        
+                        angular.element($window).on('resize', function () {
+                            scope.initializeTimepicker();
+                            if (timeline.length > 0) {
+                                timeline_width = timeline[0].offsetWidth;
+                            }
+                            sectionlength = timeline_width / 24;
+                            scope.checkWidth(true);
+                        });
+                   
+                        scope.setTimeBar = function (date) {
+                            currenttime = $('.current-time');
+                            var timeline_width = $('.timeline')[0].offsetWidth;
+                            var hours = scope.time.split(':')[0];
+                            if (hours == 12) {
+                                hours = 0;
+                            }
+                            var minutes = scope.time.split(':')[1];
+                            var minutes_offset = (minutes / 60) * (timeline_width / 12);
+                            var hours_offset = (hours / 12) * timeline_width;
+                            scope.currentoffset = parseInt(hours_offset + minutes_offset - 1);
+                            currenttime.css({
+                                transition: 'transform 0.4s ease',
+                                transform: 'translateX(' + scope.currentoffset + 'px)',
+                            });
+                        };
+                        scope.getTime = function () {
+    // get hours
+    var percenttime = (scope.currentoffset + 1) / timeline_width;
+    var hour = Math.floor(percenttime * 12);
+    var percentminutes = (percenttime * 12) - hour;
+    var minutes = Math.round((percentminutes * 60) / 5) * 5;
+
+    if (scope.timeframe === 'am') {
+        // Limit to 7 AM to 11 AM
+        if (hour <= 6 || hour >= 11) {
+            hour = 6;
+            return;
+        }
+    } else {
+        // Limit to 1 PM to 10 PM
+        if (hour <= 0 || hour >= 10) {
+            hour = 1;
+            return;
+        }
+    }
+
+    if (hour === 0) {
+        hour = (scope.timeframe === 'am') ? 7 : 1;
+    }
+
+    if (minutes == 60) {
+        hour += 1;
+        minutes = 0;
+    }
+
+    scope.time = hour + ":" + pad2(minutes);
+    scope.updateInputTime();
+    scope.updateDate();
+};
+                        var initialized = false;
+        
+                        element.on('touchstart', function() {
+                            if (!initialized) {
+                                element.find('.timeline-container').on('touchstart', function (event) {
+                                    scope.timeSelectStart(event);
+                                });
+                                initialized = true;
+                            }
+                        });
+        
+                        scope.timeSelectStart = function (event) {
+                            scope.initializeTimepicker();
+                            var timepicker_container = element.find('.timepicker-container-inner');
+                            var timepicker_offset = timepicker_container.offset().left;
+                            if (event.type == 'mousedown') {
+                                scope.xinitial = event.clientX;
+                            } else if (event.type == 'touchstart') {
+                                scope.xinitial = event.originalEvent.touches[0].clientX;
+                            }
+                            scope.moving = true;
+                            scope.currentoffset = scope.xinitial - timepicker_container.offset().left;
+                            scope.totaloffset = scope.xinitial - timepicker_container.offset().left;
+                            console.log(timepicker_container.width());
+                            if (scope.currentoffset < 0) {
+                                scope.currentoffset = 0;
+                            } else if (scope.currentoffset > timepicker_container.width()) {
+                                scope.currentoffset = timepicker_container.width();
+                            }
+                            currenttime.css({
+                                transform: 'translateX(' + scope.currentoffset + 'px)',
+                                transition: 'none',
+                                cursor: 'ew-resize',
+                            });
+                            scope.getTime();
+                        };
+                   
+                        angular.element($window).on('mousemove touchmove', function (event) {
+                            if (scope.moving === true) {
+                                event.preventDefault();
+                                if (event.type == 'mousemove') {
+                                    scope.offsetx = event.clientX - scope.xinitial;
+                                } else if (event.type == 'touchmove') {
+                                    scope.offsetx = event.originalEvent.touches[0].clientX - scope.xinitial;
+                                }
+                                var movex = scope.offsetx + scope.totaloffset;
+                                if (movex >= 0 && movex <= timeline_width) {
+                                    currenttime.css({
+                                        transform: 'translateX(' + movex + 'px)',
+                                    });
+                                    scope.currentoffset = movex;
+                                } else if (movex < 0) {
+                                    currenttime.css({
+                                        transform: 'translateX(0)',
+                                    });
+                                    scope.currentoffset = 0;
+                                } else {
+                                    currenttime.css({
+                                        transform: 'translateX(' + timeline_width + 'px)',
+                                    });
+                                    scope.currentoffset = timeline_width;
+                                }
+                                scope.getTime();
+                                scope.$apply();
+                            }
+                        });
+                   
+                        angular.element($window).on('mouseup touchend', function (event) {
+                            if (scope.moving) {
+                                // var roundsection = Math.round(scope.currentoffset / sectionlength);
+                                // var newoffset = roundsection * sectionlength;
+                                // currenttime.css({
+                                //     transition: 'transform 0.25s ease',
+                                //     transform: 'translateX(' + (newoffset - 1) + 'px)',
+                                //     cursor: 'pointer',
+                                // });
+                                // scope.currentoffset = newoffset;
+                                // scope.totaloffset = scope.currentoffset;
+                                // $timeout(function () {
+                                //     scope.getTime();
+                                // }, 250);
+                            }
+                            scope.moving = false;
+                        });
+        
+                        scope.adjustTime = function (direction) {
+                            event.preventDefault();
+                            scope.initializeTimepicker();
+                            var newoffset;
+                            if (direction == 'decrease') {
+                                newoffset = scope.currentoffset - sectionlength;
+                            } else if (direction == 'increase') {
+                                newoffset = scope.currentoffset + sectionlength;
+                            }
+                            if (newoffset < 0 || newoffset > timeline_width) {
+                                if (newoffset < 0) {
+                                    newoffset = timeline_width - sectionlength;
+                                } else if (newoffset > timeline_width) {
+                                    newoffset = 0 + sectionlength;
+                                }
+                                if (scope.timeframe == 'am') {
+                                    scope.timeframe = 'pm';
+                                }
+                                else if (scope.timeframe == 'pm') {
+                                    scope.timeframe = 'am';
+                                }
+                            }
+                            currenttime.css({
+                                transition: 'transform 0.4s ease',
+                                transform: 'translateX(' + (newoffset - 1) + 'px)',
+                            });
+                            scope.currentoffset = newoffset;
+                            scope.totaloffset = scope.currentoffset;
+                            scope.getTime();
+                        };
+                    }
+        
+                    // End Timepicker Code //
+        
+                }
+            };
+        });
+    </script>
+    <script type="module">
+        import { createClient } from 'https://cdn.skypack.dev/@supabase/supabase-js';
+        const supabaseUrl = 'https://zawjfccbtpenaiishhqm.supabase.co'
+        const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inphd2pmY2NidHBlbmFpaXNoaHFtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDE3MDE5MzgsImV4cCI6MjAxNzI3NzkzOH0.P8V6SP-el84Aq2ucjGRNFirsZOlQZHmgYSyC_njYvFw'
+        const supabase = createClient(supabaseUrl, supabaseKey)
+
+        const form = document.getElementById('FormClient');
+
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+
+            const pack = document.getElementById('packageselect').value;
+            const date = document.getElementById('DateSelect').value;
+            const time = document.getElementById('TimeSelect').value;
+            const clientName = document.getElementById('CustomerName').value;
+            const clientPhone = document.getElementById('CustomerPhone').value;
+            const clientEmail = document.getElementById('CustomerEmail').value;
+            const Pay = "Unpaid";
+
+            // Call the function to insert data into the "Bookings" table
+            await insertBooking(clientName, clientEmail, date, time, clientPhone, pack, Pay);
+        });
+
+        async function insertBooking(clientName, clientEmail, date, time, clientPhone, pack, Pay) {
+            try {
+                const { data, error } = await supabase
+                    .from('Bookings')
+                    .insert([
+                        {
+                            client: clientName,
+                            client_email: clientEmail,
+                            Book_date: date,
+                            Book_time: time,
+                            client_phone: clientPhone,
+                            Package: pack,
+                            payment: "unpaid",
+                        },
+                    ]);
+
+                if (error) {
+                    console.error('Error inserting data:', error);
+                } else {
+                    console.log('Data inserted successfully:', data);
+                            
+                    document.getElementsByClassName("search-model")[0].style.opacity = "1";
+                    document.getElementsByClassName("search-model")[0].style.pointerEvents = "all";
+                    document.getElementById("PaymentQR").style.scale = "48%";
+                    document.getElementsByClassName("stopscroll")[0].style.overflowY = "hidden";
+                }
+            } catch (error) {
+                console.error('Error:', error.message);
+            }
+        }
+    </script>
 </body>
 
 </html>

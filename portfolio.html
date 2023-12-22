@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Phozogy Template">
-    <meta name="keywords" content="Phozogy, unica, creative, html">
+    <meta name="description" content="The Art Lens">
+    <meta name="keywords" content="Photographyraphy, unica, creative, html, camera, photographer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The Art Lens</title>
@@ -82,7 +82,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h2>Our latest works</h2>
+                        <h2>PORTFOLIO</h2>
                     </div>
                     <div class="filter-controls">
                         <ul>
@@ -185,7 +185,7 @@
             </div>
         </div>
         <div class="load-more-btn portfolio-btn">
-            <a href="#">Load More</a>
+            <a href="#">BACK TO TOP</a>
         </div>
     </section>
     <!-- Portfolio Section End -->
@@ -204,7 +204,7 @@
                         <p style="text-align: justify;">Capture moments and bring pictures to life. Experience the joy of having each photo turned into lasting memories.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-6" style="margin-left: 40px;">
                     <div class="fs-widget">
                         <h5>FACEBOOK</h5>
                         <div class="fw-instagram">
@@ -228,13 +228,13 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-5" style="max-width: 22%;">
                     <div class="fs-widget">
                         <h5>Contact Me</h5>
                         <div class="fw-subscribe">
-                            <form action="#">
-                                <input type="text" placeholder="Email">
-                                <button type="submit"><i class="fa fa-send"></i></button>
+                            <form action="contact.html#contact-section" method="POST">
+                                <input type="text" placeholder="Email" id="emailInput">
+                                <button type="submit" onclick="saveEmail()"><i class="fa fa-send"></i></button>
                             </form>
                         </div>
                     </div>
@@ -271,6 +271,13 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        function saveEmail() {
+            const emailValue = document.getElementById('emailInput').value;
+            localStorage.setItem('userEmail', emailValue);
+            window.location.href = 'contact.html';
+        }
+    </script>
 </body>
 
 </html>
