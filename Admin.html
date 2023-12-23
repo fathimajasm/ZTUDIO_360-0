@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zxx" style="height: 100%;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Art Lens</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Quantico:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="icon" href="Images/Favicon.png" type="image/x-icon">
+</head>
+
+<body class="stopscroll" >
+    <!-- Page Preloder -->
+
+    <!-- Header Section Begin -->
+    <header class="header-section header-normal">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="img/logo-word.png" alt="">
+                        </a>
+                    </div>
+                    <a href="./SecretLogin.html">
+                        <div class="top-search">
+                            LOG OUT
+                        </div>
+                    </a>
+                    <nav class="nav-menu mobile-menu">
+                        <ul style="cursor: pointer;">
+                            <li class="active" id="ClientMenu" onclick="ClientPane()"><a>Clients</a></li>
+                            <li id="HistoryMenu" onclick="HistoryPane()"><a>History</a></li>
+                        </ul>
+                    </nav>
+                    <div id="mobile-menu-wrap"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12" style="padding: 0px;">
+                    <div class="section-title">
+                        <h2 id="sectionTitle">Clients</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- Services Section Begin -->
+    <section class="services-section services-normal spad">
+        <div class="container">
+            <div class="row">
+                <table id="bookingTable">
+                    <thead>
+                        <tr>
+                            <th>Client Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Package</th>
+                            <th>Booked Date</th>
+                            <th>Time</th>
+                            <th>Status</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+                <table id="historyTable" style="display: none;">
+                    <thead>
+                        <tr>
+                            <th>Client Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Package</th>
+                            <th>Booked Date</th>
+                            <th>Time</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+                <table id="AdminTable" style="display: none;">
+                    <thead>
+                        <tr>
+                            <th>Admin Name</th>
+                            <th>Email</th>
+                            <th>Password</th>
+                            <th>Created on</th>
+                            <th>Last Sign In</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section" style="padding-top: 31px; margin-top: 31px; position:absolute;  bottom:0; width: 100%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="copyright-text" style="padding: 0px 0; margin-top: 0px;">
+                        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | The Art Lens
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search model Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="modal">
+                <div class="search-close-switch" onclick="closemodal()">+</div>
+                <img src="img/clients/GcashPlaceholder.png" alt="PaymentQR" id="PaymentQR">
+                YOU CAN NOW PAY THROUGH GCASH BY JUST SCANNING THE QR-CODE!
+            </div>
+        </div>
+    </div>
+    <!-- Search model end -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script>
+        function updateStatus(select) {
+            const selectedOption = select.options[select.selectedIndex];
+            select.className = `status-dropdown ${selectedOption.className}`;
+        }
+
+        function ClientPane() {
+            document.getElementById("bookingTable").style.display = "table";
+            document.getElementById("historyTable").style.display = "none";
+            document.getElementById("ClientMenu").className = "active";
+            document.getElementById("HistoryMenu").className = "";
+            document.querySelectorAll(".status-dropdown").forEach(element => {
+                element.classList.remove("staticBooking");
+            });
+            document.getElementById("sectionTitle").innerText = "Clients";
+        }
+        
+        function HistoryPane() {
+            document.getElementById("bookingTable").style.display = "none";
+            document.getElementById("historyTable").style.display = "table";
+            document.getElementById("HistoryMenu").className = "active";
+            document.querySelectorAll(".status-dropdown").forEach(element => {
+                element.classList.add("staticBooking");
+            });
+            document.getElementById("ClientMenu").className = "";
+            document.getElementById("sectionTitle").innerText = "History";
+        }
+        
+        function AdminPane() {
+            document.getElementById("sectionTitle").innerText = "Admin";
+        }
+        
+        function SitePane() {
+            document.getElementById("sectionTitle").innerText = "Site Settings";
+        }
+
+    </script>
+    <script type="module">
+        import { createClient } from 'https://cdn.skypack.dev/@supabase/supabase-js';
+        const supabaseUrl = 'https://zawjfccbtpenaiishhqm.supabase.co'
+        const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inphd2pmY2NidHBlbmFpaXNoaHFtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDE3MDE5MzgsImV4cCI6MjAxNzI3NzkzOH0.P8V6SP-el84Aq2ucjGRNFirsZOlQZHmgYSyC_njYvFw'
+        const supabase = createClient(supabaseUrl, supabaseKey)
+
+        let updatedData = [];
+
+        async function fetchData() {
+            try {
+                const { data, error } = await supabase
+                    .from('Bookings')
+                    .select('*');
+
+                if (error) {
+                    console.error('Error fetching data:', error.message);
+                    return;
+                }
+
+                // Clear existing rows
+                const tableBody = document.querySelector('#bookingTable tbody');
+                const historyBody = document.querySelector('#historyTable tbody');
+                tableBody.innerHTML = '';
+                historyBody.innerHTML = '';
+
+                // Get the current date and time
+                const currentDate = new Date();
+
+                // Populate the table with data
+                data.forEach(booking => {
+                    const bookingDate = new Date(booking.Book_date + ' ' + booking.Book_time);
+
+                    // Check if the booking is within a certain timeframe (e.g., within 7 days from today)
+                    const timeFrameInDays = 7;
+                    const timeDifferenceInMilliseconds = bookingDate - currentDate;
+                    const timeDifferenceInDays = timeDifferenceInMilliseconds / (1000 * 60 * 60 * 24);
+
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${booking.client}</td>
+                        <td>${booking.client_email}</td>
+                        <td>${booking.client_phone}</td>
+                        <td>${booking.Package}</td>
+                        <td>${booking.Book_date}</td>
+                        <td>${booking.Book_time}</td>
+                        <td class="status-cell">
+                            <select class="status-dropdown" onchange="updateStatus(this); updatePayment(${booking.booking_id}, this.value)">
+                                <option value="paid" ${booking.payment === 'paid' ? 'selected' : ''} class="option-paid">Paid</option>
+                                <option value="unpaid" ${booking.payment === 'unpaid' ? 'selected' : ''} class="option-pending">Pending</option>
+                                <option value="refund" ${booking.payment === 'refund' ? 'selected' : ''} class="option-refund">Refunded</option>
+                            </select>
+                        </td>
+                        <td class="delete-cell">
+                            <button onclick="deleteBooking(${booking.booking_id})">Delete</button>
+                        </td>
+                    `;
+
+                    // Add the row to the appropriate table based on the conditions
+                    if (timeDifferenceInDays >= 0) {
+                        tableBody.appendChild(row);
+                    } else if ((booking.payment === 'paid' || booking.payment === 'refund' ) && timeDifferenceInDays <= 0 && timeDifferenceInDays >= -timeFrameInDays) {
+                        historyBody.appendChild(row);
+                        // Remove the delete cell for historyTable
+                        row.querySelector('.delete-cell').remove();
+                    }
+                    
+                    updateStatus(row.querySelector('.status-dropdown'));
+                });
+            } catch (error) {
+                console.error('Error:', error.message);
+            }
+        }
+
+        
+        
+        window.deleteBooking = async function (bookingId) {
+            try {
+                const { error } = await supabase
+                    .from('Bookings')
+                    .delete()
+                    .eq('booking_id', bookingId);
+
+                if (error) {
+                    console.error('Error deleting booking:', error.message);
+                    return;
+                }
+
+                // Refresh the data after deletion
+                fetchData();
+            } catch (error) {
+                console.error('Error:', error.message);
+            }
+        }
+
+        window.updatePayment = async function (bookingId, newPaymentValue) {
+    try {
+        await supabase
+            .from('Bookings')
+            .update({ payment: newPaymentValue })
+            .eq('booking_id', bookingId);
+
+        // Optionally, you can fetch the updated data from the database and refresh the table
+        fetchData();
+
+        alert('Payment value updated successfully');
+    } catch (error) {
+        console.error('Error updating payment value:', error.message);
+    }
+}
+
+               // Call fetchData when the page loads
+        fetchData();
+
+    </script>
+</body>
+
+</html>

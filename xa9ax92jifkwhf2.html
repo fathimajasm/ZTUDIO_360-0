@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Art Lens</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Quantico:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="icon" href="Images/Favicon.png" type="image/x-icon">
+</head>
+
+<body style="display: flex; justify-content: center; align-items: center; background-color: #97A0F7;">
+    <div class="secretform">
+        <div class="col-lg-6 col-md-6" style="display: flex; justify-content: center; align-items: center;">
+            <div class="contact-form" >
+                <form method="POST" id="emailform" style="display: flex; flex-direction: column;">
+                        <div class="formLogo">
+                            <img src="img/logo-word.png">
+                        </div>
+                        <label for="passadmin">New Password</label>
+                        <input type="password" placeholder="******" id="passadmin" name="passadmin">
+                        <label for="confirmpass">Confirm New Password</label>
+                        <input type="password" placeholder="******" id="confirmpass" name="confirmpass">
+                        <div id="incorrect_credentials"></div>
+                        <div id="resetlink" style="align-self: center;"></div>
+                        <button type="submit" class="site-btn" style="margin: 10px; align-self: center; width: 60%; margin: 10px;">Reset</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script type="module">
+        import { createClient } from 'https://cdn.skypack.dev/@supabase/supabase-js';
+    
+        // Supabase configuration
+        const supabaseUrl1 = 'https://zawjfccbtpenaiishhqm.supabase.co';
+        const supabaseKey1 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inphd2pmY2NidHBlbmFpaXNoaHFtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDE3MDE5MzgsImV4cCI6MjAxNzI3NzkzOH0.P8V6SP-el84Aq2ucjGRNFirsZOlQZHmgYSyC_njYvFw'; // Replace with your Supabase API key
+    
+        const supabase = createClient(supabaseUrl1, supabaseKey1);
+
+        document.getElementById('emailform').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const password = document.getElementById('passadmin').value;
+            const passwordConfirm = document.getElementById('confirmpass').value;
+
+            const credentialcheck = document.querySelector('#incorrect_credentials');
+            const confirm = document.querySelector('#resetlink');
+            credentialcheck.innerHTML = '';
+            confirm.innerHTML = '';
+            const messagecred = document.createElement('tr');
+
+            if (password !== passwordConfirm) {
+                messagecred.innerHTML = `Passwords do not match!`;
+                credentialcheck.appendChild(messagecred);
+            } else {
+                messagecred.innerHTML = `Password reset successfully!`;
+                confirm.appendChild(messagecred);
+                setTimeout(function() {
+                    window.location.href = 'SecretLogin.html';
+                }, 1200);
+            }
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const token = urlParams.get('token');
+
+            const { data, error } = await supabase.auth.update({ password }, { accessToken: token });
+
+            // Handle response...
+        });
+    </script>
+</body>
