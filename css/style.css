@@ -3792,7 +3792,7 @@ th {
 }
 
 
-.top-search {
+.logout {
 	font-size: 15px;
 	height: 50px;
 	width: 150px;
@@ -3807,6 +3807,6 @@ th {
 	transition: all 0.2s ease-in-out;
 }
 
-.top-search:hover {
+.logout:hover {
 	background: #f44336;
 }
