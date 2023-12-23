@@ -3747,14 +3747,14 @@ th {
     width: 19%;
     height: 50px;
     font-size: 17px;
-	transition: all ease 0.2s;
+	transition: all ease-in-out 0.2s;
 }
 
 #ChangeSave:hover {
     background-color: #97A0F7;
 }
 
-#ChangeSave:active {
+#ChangeSave:focus {
     background-color: #8267B8;
     scale: 0.98;
 }
@@ -3763,4 +3763,50 @@ th {
 	text-align-last: center;
 	-webkit-appearance: none;
 	pointer-events: none;
+}
+
+.secretform {
+    width: 80%;
+    height: 80%;
+    background: #ECEFF8;
+    border-radius: 33px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+	text-align: left;
+}
+
+.formLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin: 70px;
+}
+
+#incorrect_credentials {
+	color: red;
+	align-self: center;
+}
+
+
+.top-search {
+	font-size: 15px;
+	height: 50px;
+	width: 150px;
+	color: #ECEFF8;
+	background: #8267B8;
+	border-radius: 10px;
+	line-height: 50px;
+	text-align: center;
+	cursor: pointer;
+	float: right;
+	margin: 19px 0 16px 40px;
+	transition: all 0.2s ease-in-out;
+}
+
+.top-search:hover {
+	background: #f44336;
 }
